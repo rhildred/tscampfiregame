@@ -1,6 +1,6 @@
 import express = require('express');
 import bodyParser = require("body-parser");
-import { Game } from "./Game";
+import { TeaGame } from "./TeaGame";
 
 // Create a new express application instance
 const app: any = express();
@@ -16,7 +16,7 @@ let oGames: any = {};
 app.post("/sms", (req: any, res: any) =>{
     let sFrom: string = req.body.From;
     if(!oGames.hasOwnProperty(sFrom)){
-        oGames[sFrom] = new Game();
+        oGames[sFrom] = new TeaGame();
     }    
     let sReply: string = oGames[sFrom].makeAMove(req.body.Body);
 
