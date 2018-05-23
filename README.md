@@ -1,62 +1,18 @@
-# <a href="https://github.com/rhildred/tsexpress" target="_blank">tsexpress</a>
+# <a href="https://github.com/rhildred/tscampfire" target="_blank">tscampfire</a>
 
-webhook event code with express
+A lot of people enjoy our Ontario provincial parks. So much so that it is hard to get a reservation. Part of the whole camping experience is the campfire. You will write a campfire story or game that can run as an SMS or Messenger BOT. It can be a choose your own adventure type story or a "never can tell" type guessing game against the computer. 
 
-The event handler pattern is an important one. It is used in producing guis but can also be more simply used in a web server.
+Marking
+-----
 
-This is a twilio webhook with a www/index.html front end written in angular 1 for testing convenience. To get express into your project add the import statement to the start of your file.
+|Element|Out Of|
+|---|---|
+|get a game or choose your own adventure in typescript| 50|
+|multiplayer - each person plays their own game against the bot.| 10|
+|story elements or states|1 each up to 20|
+|spelling and grammar|10|
+|on time|10|
 
-To get this code without express use the `starter` branch ... `git clone -b starter https://github.com/rhildred/tsexpress.git`.
+The campfire project is due as a zip of your project in the assignments folder on June 3rd by 11:59 pm.
 
-```
-
-import express = require('express');
-import bodyParser = require("body-parser");
-
-```
-
-To actually get the dependency from npm do:
-
-```
-
-npm install --save express body-parser
-
-```
-
-To set up express:
-
-```
-
-// Create a new express application instance
-const app: any = express();
-
-app.use(bodyParser.urlencoded({extended:true})); // twilio sends application/x-www-form-urlencoded
-app.use(express.static("www")); // so that we can serve our www/index.html file
-
-```
-
-You will need to create a handler for the twilio webhook:
-
-```
-
-app.post("/sms", (req: any, res: any) =>{
-    let sReply = "Hello " + req.body.From;
-    res.end("<Response><Message>" + 
-    sReply + "</Message></Response>");
-
-});
-
-```
-
-Finally you will need to start the express app:
-
-```
-
-const nPort = 3000;
-app.listen(nPort, () => console.log('Example app listening on port ' + nPort + "!"));
-
-```
-
-When you type `ts-node index.ts` you should see, `Example app listening on port 3000!`
-
-Now you can surf to http://localhost:3000 and interact with your bot.
+Note: Friday June the 1st will be a work period for you to get help with what you have already tried on your own.
