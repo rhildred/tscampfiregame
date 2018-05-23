@@ -16,3 +16,8 @@ Marking
 The campfire project is due as a zip of your project in the assignments folder on June 3rd by 11:59 pm.
 
 Note: Friday June the 1st will be a work period for you to get help with what you have already tried on your own.
+
+Sample Games
+--------
+
+I know that I said I wouldn't post my samples. A student needed some help getting caught up so I changed my mind. If you use these please make them your own. `index.ts` and `Game.ts` are a choose your own adventure game with 3 different states. `teaIndex.ts` and `TeaGame.ts` are a riddle guessing game. I will award a mark of 0 if you submit these games more than 90% as is.
