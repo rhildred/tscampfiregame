@@ -1,4 +1,4 @@
-# <a href="https://github.com/rhildred/tscampfire" target="_blank">tscampfire</a>
+# <a href="https://github.com/rhildred/tscampfiregame" target="_blank">tscampfire</a>
 
 A lot of people enjoy our Ontario provincial parks. So much so that it is hard to get a reservation. Part of the whole camping experience is the campfire. You will write a campfire story or game that can run as an SMS or Messenger BOT. It can be a choose your own adventure type story or a "never can tell" type guessing game against the computer. 
 
@@ -20,4 +20,4 @@ Note: Friday June the 1st will be a work period for you to get help with what yo
 Sample Games
 --------
 
-I know that I said I wouldn't post my samples. A student needed some help getting caught up so I changed my mind. If you use these please make them your own. `index.ts` and `Game.ts` are a choose your own adventure game with 3 different states. `teaIndex.ts` and `TeaGame.ts` are a riddle guessing game. I will award a mark of 0 if you submit these games more than 90% as is.
+I know that I said I wouldn't post my samples. A student needed some help getting caught up so I changed my mind and posted them <a href="https://github.com/rhildred/tscampfiregame" target="_blank">here</a>. If you use these please make them your own. `index.ts` and `Game.ts` are a choose your own adventure game with 3 different states. `teaIndex.ts` and `TeaGame.ts` are a riddle guessing game. I will award a mark of 0 if you submit these games more than 90% as is.
